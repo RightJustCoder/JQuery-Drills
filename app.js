@@ -1,18 +1,19 @@
-$(document).ready(function ()   {
-$('#btnSubmit').click(function () {
-    alert('It got clicked!!')
-    let txtValue = $('#txtHere').val();
-            alert(txtValue)
-        
-    });
+$(document).ready(function () {
+  //Disables button 
+  $('#btnSubmit').prop('disabled', true)
 
-
-// DOM Content Closing Tag     
+  //when letter is typed in the text area function  
+//   enables button
+  $('#txtHere').keyup (function()    {
+    $('#btnSubmit').prop('disabled', false)
 });
 
-// $(this).removeProp('disabled')
-    //alert when there is something typed in the value
+    // Function when button clicked 
+    $('#btnSubmit').click(function () {
+        alert('It got clicked!!')
+        let txtValue = $('#txtHere').val();
+        alert(txtValue)
 
-// let txtValue = ('#txtHere').valueOf();
-// alert (txtValue);
-
+    });
+    // DOM Content Closing Tag     
+});
