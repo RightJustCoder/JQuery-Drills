@@ -15,5 +15,10 @@ $(document).ready(function () {
         alert(txtValue)
 
     });
+
+
+    //Create a Div Element and append it to the body
+    let div = document.createElement('div')
+    document.body.appendChild(div)
     // DOM Content Closing Tag     
 });
